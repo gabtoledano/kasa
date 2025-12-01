@@ -6,7 +6,7 @@
   padding-bottom: 40px;
 }
 
-.navbar__menu {
+.navbar-menu {
   display: flex;
   list-style: none;
   gap: 80px;
@@ -14,7 +14,7 @@
   padding: 0;
 }
 
-.navbar__menu a {
+.navbar-menu a {
   color: #000000;
   font-weight: 500;
   font-size: 24px;
@@ -22,10 +22,10 @@
   text-decoration: none;
 }
 
-.navbar__menu a:hover {
+.navbar-menu a:hover {
   text-decoration: underline;
 }
 
-.navbar__menu a.active {
+.navbar-menu a.active {
   text-decoration: underline;
 }
