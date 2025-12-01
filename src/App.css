@@ -1,5 +1,6 @@
 body {
-    margin: 0;
+    max-width: 1240px;
+    margin: auto;
     padding: 0;
     font-family: Montserrat, sans-serif;
 }
