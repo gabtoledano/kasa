@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__menu a {
+  color: #000000;
+  font-weight: 500;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar__menu a:hover {
+  text-decoration: underline;
+}
+
+.navbar__menu a.active {
+  text-decoration: underline;
+}
