@@ -1,8 +1,8 @@
 import "./App.css";
 import { Route, Routes } from "react-router";
 import AppLayout from "./components/AppLayout/AppLayout";
-import Accueil from "./pages/accueil/Accueil";
-import Apropos from "./pages/a-propos/Apropos";
+import Accueil from './pages/accueil/Accueil.jsx';
+import Apropos from "./pages/a-propos/Apropos.jsx";
 
 function App() {
   return (
