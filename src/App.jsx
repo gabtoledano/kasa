@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" index element={<Accueil />} />
         <Route path="/a-propos" element={<Apropos />} />
-        <Route path="*" element={<div>Not found</div>} />
+        <Route path="*" element={<div className="error-page">Error 404</div>} />
       </Routes>
     </AppLayout>
   );

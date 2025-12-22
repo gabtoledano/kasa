@@ -2,7 +2,7 @@ import locationsData from "../../data/locations.json";
 import "./Appartments.css";
 
 const Appartments = () => {
-  const locations = locationsData.slice(0, 6).map((location) => ({
+  const locations = locationsData.map((location) => ({
     id: location.id,
     title: location.title,
     cover: location.cover,

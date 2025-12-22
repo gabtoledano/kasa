@@ -1,0 +1,56 @@
+.collapse-container {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.collapse-button {
+  width: 80%;
+  margin: auto;
+  background-color: #ff6060;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.collapse-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.collapse-icon {
+  width: 24px;
+  height: 14px;
+  transition: transform 0.3s;
+}
+
+.collapse-icon-open {
+  transform: rotate(180deg);
+}
+
+.collapse-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.collapse-content-open {
+  max-height: 240px;
+  opacity: 1;
+}
+
+.collapse-text {
+  width: 80%;
+  margin: auto;
+  background-color: #f6f6f6;
+  padding: 10px 20px;
+  border-radius: 0 0 10px 10px;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
