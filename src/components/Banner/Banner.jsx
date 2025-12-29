@@ -1,9 +1,11 @@
 import "./Banner.css";
 
-export const Banner = () => {
+const Banner = ({ image, title }) => {
   return (
-    <div className="banner">
-      <h1>Chez vous, partout et ailleurs</h1>
+    <div className="banner" style={{ backgroundImage: `url(${image})` }}>
+      {title && <h1>{title}</h1>}
     </div>
   );
 };
+
+export { Banner };

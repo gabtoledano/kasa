@@ -2,40 +2,9 @@ import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import "./Collapse.css";
 import "./Apropos.css";
+import { Banner } from "../../components/Banner/Banner.jsx";
+import aboutImage from "../../assets/img2.jpg";
 
-// Composant Collapse réutilisable
-const Collapse = ({ title, children }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="collapse-container">
-      <button onClick={() => setIsOpen(!isOpen)} className="collapse-button">
-        <span className="collapse-title">{title}</span>
-        <FaChevronDown
-          className={`collapse-icon ${isOpen ? "collapse-icon-open" : ""}`}
-        />
-      </button>
-
-      <div
-        className={`collapse-content ${isOpen ? "collapse-content-open" : ""}`}
-      >
-        <div className="collapse-text">{children}</div>
-      </div>
-    </div>
-  );
-};
-
-// Composant Banner (exemple - vous pouvez utiliser votre Banner.jsx existant)
-const Banner = ({ image, title }) => {
-  return (
-    <div className="banner">
-      <img src={image} alt={title} className="banner-image" />
-      <div className="banner-overlay"></div>
-    </div>
-  );
-};
-
-// Page À propos
 const AboutPage = () => {
   const collapseData = [
     {
@@ -63,10 +32,7 @@ const AboutPage = () => {
   return (
     <div className="about-page">
       <div className="about-container">
-        <Banner
-          image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=400&fit=crop"
-          title="À propos"
-        />
+        <Banner image={aboutImage} />
 
         <div className="collapses-wrapper">
           {collapseData.map((item, index) => (
@@ -75,6 +41,27 @@ const AboutPage = () => {
             </Collapse>
           ))}
         </div>
+      </div>
+    </div>
+  );
+};
+
+const Collapse = ({ title, children }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="collapse-container">
+      <button onClick={() => setIsOpen(!isOpen)} className="collapse-button">
+        <span className="collapse-title">{title}</span>
+        <FaChevronDown
+          className={`collapse-icon ${isOpen ? "collapse-icon-open" : ""}`}
+        />
+      </button>
+
+      <div
+        className={`collapse-content ${isOpen ? "collapse-content-open" : ""}`}
+      >
+        <div className="collapse-text">{children}</div>
       </div>
     </div>
   );

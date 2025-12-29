@@ -29,3 +29,11 @@ const Appartments = () => {
 };
 
 export { Appartments };
+
+
+/* Notes:
+// Navlink > diriger vers une url (url de l'appartement)
+// 
+useParams > récupérer les infos de l'url (id contenu dans l'url de l'appartement)
+// 
+// find > comparer l'id de l'url avec toutes les id de l'appart pour check si il existe si il n'existe pas = error 404*/
