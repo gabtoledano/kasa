@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import locationsData from "../../data/locations.json";
 import "./Appartments.css";
 
@@ -12,16 +13,22 @@ const Appartments = () => {
     <div className="appartments-container">
       <div className="appartments-grid">
         {locations.map((location) => (
-          <div key={location.id} className="appartment-card">
-            <img
-              src={location.cover}
-              alt={location.title}
-              className="appartment-image"
-            />
-            <div className="appartment-card-content">
-              <h3 className="appartment-title">{location.title}</h3>
+          <NavLink
+            key={location.id}
+            to={`/appartements/${location.id}`}
+            className="appartment-card-link"
+          >
+            <div className="appartment-card">
+              <img
+                src={location.cover}
+                alt={location.title}
+                className="appartment-image"
+              />
+              <div className="appartment-card-content">
+                <h3 className="appartment-title">{location.title}</h3>
+              </div>
             </div>
-          </div>
+          </NavLink>
         ))}
       </div>
     </div>
@@ -29,11 +36,3 @@ const Appartments = () => {
 };
 
 export { Appartments };
-
-
-/* Notes:
-// Navlink > diriger vers une url (url de l'appartement)
-// 
-useParams > récupérer les infos de l'url (id contenu dans l'url de l'appartement)
-// 
-// find > comparer l'id de l'url avec toutes les id de l'appart pour check si il existe si il n'existe pas = error 404*/
