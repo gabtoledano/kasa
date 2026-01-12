@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="logo.svg" alt="Logo Kasa" />
+        <img src="/logo.svg" alt="Logo Kasa" />
       </div>
 
       <ul className="navbar-menu">

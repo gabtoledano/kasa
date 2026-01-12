@@ -4,7 +4,7 @@ import AppLayout from "./components/AppLayout/AppLayout";
 import Accueil from './pages/accueil/Accueil.jsx';
 import Apropos from "./pages/a-propos/Apropos.jsx";
 import AppartmentDetail from "./pages/appartment-detail/AppartmentDetail.jsx";
-import NotFound from "./components/NotFound/NotFound.jsx";
+import NotFound from "./pages/NotFound/NotFound.jsx";
 
 function App() {
   return (
