@@ -1,9 +1,6 @@
 .notfound-container {
-  padding: 60px 20px;
+  padding-bottom: 80px;
   text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,37 +8,24 @@
 }
 
 .notfound-title {
-  font-size: 96px;
+  font-size: 288px;
   margin: 0;
-  color: #dc3545;
-  font-weight: bold;
+  color: #FF6060;
+  font-weight: 700;
+  padding-bottom: 100px;
+  padding-top: 50px;
 }
 
 .notfound-container h2 {
-  color: #333;
-  margin: 20px 0;
-  font-size: 32px;
-}
-
-.notfound-message {
-  color: #666;
-  margin-bottom: 40px;
-  font-size: 18px;
-  line-height: 1.6;
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+  padding-bottom: 80px;
 }
 
 .notfound-link {
-  display: inline-block;
-  padding: 12px 30px;
-  background: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 16px;
-  transition: background 0.3s ease;
-}
-
-.notfound-link:hover {
-  background: #0056b3;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 30px;
 }

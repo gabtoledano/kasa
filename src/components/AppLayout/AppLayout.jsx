@@ -1,12 +1,19 @@
-import Navbar from "../Navbar/Navbar.jsx";
-import Footer from "../Footer/Footer.jsx";
+import Header from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+import "./AppLayout.css";
 
-export default function AppLayout(props) {
+function AppLayout({ children }) {
   return (
-    <div>
-      <Navbar />
-      {props.children}
+    <>
+      <div className="main-wrapper">
+        <Header />
+        <main className="main-content">
+          {children}
+        </main>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
+
+export default AppLayout;

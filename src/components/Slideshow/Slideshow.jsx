@@ -4,6 +4,7 @@ import "./Slideshow.css";
 function Slideshow({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // S’il n’y a qu’une image, on l’affiche sans navigation
   if (images.length === 1) {
     return (
       <div className="slideshow">
