@@ -7,3 +7,10 @@
 .main-content {
   width: 100%;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .main-wrapper {
+    max-width: 335px;
+  }
+}

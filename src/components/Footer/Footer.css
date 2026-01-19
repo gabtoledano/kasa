@@ -20,3 +20,23 @@
   font-weight: 500;
   padding-top: 35px;
 }
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .footer img {
+    width: 122px;
+    padding-top: 20px;
+  }
+
+  .footer p {
+    font-size: 12px;
+    padding-top: 20px;
+    text-align: center;
+    width: 35%;
+  }
+}

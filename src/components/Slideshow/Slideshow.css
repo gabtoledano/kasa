@@ -43,3 +43,27 @@
   font-size: 14px;
   font-weight: bold;
 }
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px) {
+  .slideshow-image {
+    height: 255px;
+  }
+
+  .slideshow-button {
+    font-size: 30px;
+  }
+
+  .slideshow-button-prev {
+    left: 10px;
+  }
+
+  .slideshow-button-next {
+    right: 10px;
+  }
+
+  .slideshow-counter {
+    display: none;
+  }
+}

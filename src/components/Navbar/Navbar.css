@@ -29,3 +29,25 @@
 .navbar-menu a.active {
   text-decoration: underline;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navbar-logo img {
+    width: 145px;
+    height: auto;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+  }
+
+  .navbar-menu a {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}

@@ -36,3 +36,23 @@
   margin: 0;
   font-size: 18px;
 }
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  .appartments-container {
+    margin-top: 25px;
+  }
+
+  .appartments-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .appartment-card {
+    height: 255px;
+  }
+
+  .appartment-title {
+    font-size: 18px;
+  }
+}

@@ -79,3 +79,20 @@
 .collapse-text li {
   margin-bottom: 8px;
 }
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px) {
+  .collapse-title {
+    font-size: 13px;
+  }
+
+  .collapse-text p, ul {
+    font-size: 12px;
+    line-height: 143%;
+  }
+
+  .collapse-text {
+    font-size: 12px;
+  }
+}

@@ -14,3 +14,10 @@
   flex-direction: column;
   gap: 0;
 }
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  .about-container {
+    padding: 0;
+  }
+}

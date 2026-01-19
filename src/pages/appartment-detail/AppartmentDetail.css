@@ -91,3 +91,66 @@
   margin-top: 30px;
   padding-bottom: 30px;
 }
+
+/*RESPONSIVE*/
+/* VERSION MOBILE */
+@media (max-width: 768px) {
+  .apartment-detail-container {
+    padding: 0;
+  }
+
+  .apartment-header {
+    flex-direction: column;
+  }
+
+  .apartment-detail-container h1 {
+    font-size: 18px;
+  }
+
+  .apartment-location {
+    font-size: 14px;
+  }
+
+  .apartment-tags {
+    gap: 10px;
+  }
+
+  .tag {
+    font-size: 10px;
+    border-radius: 5px;
+  }
+
+  .apartment-info-right {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .apartment-host {
+    gap: 10px;
+  }
+
+  .host-name {
+    font-size: 12px;
+  }
+
+  .host-picture {
+    width: 32px;
+    height: 32px;
+  }
+
+  .apartment-rating {
+    gap: 5px;
+  }
+
+  .star {
+    font-size: 13px;
+  }
+
+  .apartment-details-section {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+}
